@@ -1,0 +1,68 @@
+:root {
+  --max-width: 1100px;
+  --border-radius: 8px;
+  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
+    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
+    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+
+  --foreground-color: #000; /* Changed to black */
+  --background-color: #f9f9f9;
+  --primary-color: #0071ff;
+  --secondary-color: #005fcc;
+  --card-background: #ffffff;
+  --card-border: #e0e0e0;
+  --hover-background: rgba(0, 113, 255, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: var(--foreground-color); /* This will now be black */
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+button {
+  padding: 0.8rem 1.5rem;
+  background-color: var(--primary-color);
+  color: black;
+  border-radius: 1;
+  border: aquamarine;
+  cursor: pointer;
+  transition: background-color 200ms ease-in-out;
+}
+
+button:hover {
+  background-color: rebeccapurple;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-color: #f9f9f9;
+    --background-color: #1a1a1a;
+    --primary-color: #3b82f6;
+    --secondary-color: #2563eb;
+    --card-background: #2d2d2d;
+    --card-border: #444;
+    --hover-background: rgba(59, 130, 246, 0.1);
+  }
+}

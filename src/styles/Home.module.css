@@ -1,0 +1,116 @@
+.tokenDappContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.95); /* Light background for the main container */
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+.tx-status-container {
+  background-color: #f1f1f1; /* Light background for the transaction status */
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem; /* Space below the transaction status */
+  text-align: center; /* Center align transaction status text */
+}
+
+.tx-status-header {
+  margin: 0.5rem 0; /* Spacing above and below the headers */
+  color: #333; /* Dark text for better contrast */
+}
+
+.input {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc; /* Light border for inputs */
+  border-radius: var(--border-radius);
+  transition: border 0.3s ease; /* Smooth transition */
+}
+
+.input:focus {
+  border-color: var(--primary-color); /* Highlight border on focus */
+}
+
+.submitButton {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: var(--primary-color); /* Primary button color */
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.submitButton:disabled {
+  background-color: blueviolet; /* Gray background when disabled */
+  cursor: not-allowed; /* Not allowed cursor */
+}
+
+.submitButton:hover:not(:disabled) {
+  background-color: var(--secondary-color); /* Darker shade on hover */
+}
+.label {
+  font-size: 1.1rem; /* Increased font size */
+  margin-bottom: 8px; /* Margin below label */
+  display: block; /* Make the label a block element for better spacing */
+}
+
+.input {
+  padding: 10px; /* Add padding inside the input */
+  margin-bottom: 20px; /* Space below the input */
+  width: 100%; /* Full width for the input */
+  border: 1px solid var(--card-border); /* Border for the input */
+  border-radius: var(--border-radius); /* Rounded corners */
+  font-size: 1rem; /* Adjust font size */
+}
+
+.submitButton {
+  padding: 12px 20px; /* Increased padding for the button */
+  font-size: 1.1rem; /* Larger font size for the button */
+  margin-top: 10px; /* Space above the button */
+  background-color: rgb(165, 0, 198); /* Background color */
+  color: #fff; /* Text color */
+  border: none; /* No border */
+  border-radius: var(--border-radius); /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 200ms ease-in-out; /* Smooth transition */
+}
+
+.submitButton:hover {
+  background-color: rgb(121, 0, 158); /* Darker background on hover */
+}
+.tokenTable {
+  width: 100%; /* Full width of the table */
+  border-collapse: collapse; /* Ensure borders are collapsed */
+  margin: 20px 0; /* Space above and below the table */
+}
+
+.tableHeader {
+  background-color: #f1f1f1; /* Light background for headers */
+  padding: 10px; /* Padding inside header cells */
+  text-align: left; /* Align text to the left */
+  border-bottom: 2px solid var(--card-border); /* Bottom border for header */
+}
+
+.tokenRow {
+  background-color: #ffffff; /* White background for rows */
+  transition: background-color 200ms; /* Smooth transition */
+}
+
+.tokenRow:hover {
+  background-color: rgba(0, 113, 255, 0.1); /* Highlight row on hover */
+}
+
+.tokenCell {
+  padding: 10px; /* Padding inside table cells */
+  border-bottom: 1px solid var(--card-border); /* Bottom border for cells */
+  text-align: left; /* Align text to the left */
+}
+
